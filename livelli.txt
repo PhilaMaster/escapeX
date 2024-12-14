@@ -1,0 +1,152 @@
+LEGENDA
+W = Wall/Muro
+E = Exit/Uscita
+K = Key/Chiave
+I = Invisible/Muro invisibile
+P = Porta/Porta
+H = Horizontal/Mostro che si muove in orizzontale
+V = Vertical/  Mostro che si muove in verticale
+S = Star/Stelline
+'''
+livello1=[
+    "WWWWWWWWWWWWWWWWWW",
+    "W       EEE     2W",
+    "W                W",
+    "W  1            HW",
+    "W                W",
+    "WH            1  W",
+    "W                W",
+    "W               HW",
+    "W 1              W",
+    "W                W",
+    "WWWWWWW   WWWWWWWW",
+    "      IIIII       ",
+    ]
+livello2=[
+    "WWWWWWWWWWWWWWWWWW",
+    "W     E          W",
+    "W               2W",
+    "WWWWWWWWPWWWWWWWWW",
+    "W 1              W",
+    "W       K        W",
+    "W           1    W",
+    "WH      W       HW",
+    "W  1             W",
+    "W               1W",
+    "WWWWWWW    WWWWWWWW",
+    "      IIIII       ",
+    ]
+livello3=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "WE              2W", 
+    "WWWWWWWWWPWWWWWWWW",   
+    "W   K           1W", 
+    "W        H       W",           
+    "W1               W", 
+    "WWWWWWWWWPWWWWWWWW" 
+    "W   K            W", 
+    "W        H       W" 
+    "W               1W", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]
+livello4=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W  V K         V W", 
+    "W                W",   
+    "W1    WWPWWWW   1W", 
+    "W     WV   VW    W",           
+    "W     W     W    W", 
+    "W     W  E  W    W" 
+    "W1    W     W   1W", 
+    "W     W  2  W    W", 
+    "W     WWWWWWW    W" 
+    "W                W", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]
+livello5=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W   P    1    P  W", 
+    "W   W         W  W",   
+    "W    W   H   W   W", 
+    "W1    W     W   1W",           
+    "W  K   W   W  K W", 
+    "W      W   W     W", 
+    "WPWWWWWW   WWWWWPW", 
+    "W     2W K W2    W", 
+    "W     EW   WE    W", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]
+livello6=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W 2 W     V     1W", 
+    "WWPWW            W",   
+    "W   W  WWWWWWW   W", 
+    "WH  W  W1  K W   W",           
+    "W   P      K W   W", 
+    "WWPWWWWWWWWWWW   W" 
+    "W     1W         W", 
+    "WH     W   WWWWWWW" 
+    "W     EW   WH   HW", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]
+livello7=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W1   P      P    W", 
+    "W    W  E  2W    W",   
+    "WH   WWWWWWWW   HW", 
+    "W    WK  1 KW    W",           
+    "W    W      W    W", 
+    "WH      WW      HW" 
+    "W                W", 
+    "W      HWWH      W" 
+    "W1               W", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ] 
+livello8=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W2  WE       W1 1W", 
+    "W   W        W   W",   
+    "WH  WWWWPWWWWW  HW", 
+    "W   W       1W   W",           
+    "WH  W        W   W", 
+    "W   WWWWPWWWWW   W", 
+    "W               HW", 
+    "WWWWWWW          W", 
+    "W1K   P         KW", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]    
+     
+ livello9=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "WK  P   V    P   W", 
+    "W   W1   V  KW  KW",   
+    "WPWWWWWWWWWWWWPWWW", 
+    "W  1W2  V V  W  1W",           
+    "W   W        P   W", 
+    "W  KWE   V   W  KW" 
+    "WWPWWWWWWWWWWWWWWW", 
+    "W   P       V   1W" 
+    "WK  W           KW", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ]
+ livello10=[
+    "WWWWWWWWWWWWWWWWWW", 
+    "W  1 V   K  V    W", 
+    "W                W",   
+    "WH   WWWWPWWWW  HW", 
+    "W    W       W 1 W",           
+    "W   HW       WH  W", 
+    "W    W2  E   W   W" 
+    "WH   WWWWWWWWW  HW", 
+    "W    V       V   W" 
+    "W1     V   V     W", 
+    "WWWWWWWW   WWWWWWW", 
+    "       IIIII      ",
+    ] 
