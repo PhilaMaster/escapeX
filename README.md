@@ -4,7 +4,7 @@ tempo, senza toccare mura, e senza essere uccisi dai mostri.
 
 Il codice è strutturato in modo da creare dei livelli a partire da matrici di caratteri,
 (in realtà liste di stringhe), del tipo :
-
+<pre>
 livello = [  # 2
     "WWWWWWWWWWWWWWWWWW",
     "W    EE         EW",
@@ -19,6 +19,7 @@ livello = [  # 2
     "WWWWWWWWWWWWWWWWWW",
     "                  ",
 ]
+</pre>
 (Questo ad esempio è proprio il livello 2 del gioco, superate il primo livello per
 vederne la corrispondenza)
 A ogni lettera sono attribuite delle proprietà specifiche secondo la seguente legenda:
