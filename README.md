@@ -1,9 +1,12 @@
-Escape X è un gioco il cui obiettivo è quello di superare 10 (X) livelli.
-Lo scopo di ogni livello è arrivare al punto di uscita, prima dello scadere del
-tempo, senza toccare mura, e senza essere uccisi dai mostri.
+# Escape X - Game Overview
 
-Il codice è strutturato in modo da creare dei livelli a partire da matrici di caratteri,
-(in realtà liste di stringhe), del tipo :
+Escape X is a game where the objective is to complete X (10) levels.
+
+Each level challenges the player to reach the exit point before time runs out while avoiding walls and dangerous enemies.
+
+## Level Design & Structure
+
+The levels are generated using character matrices (implemented as lists of strings), such as the following example:
 <pre>
 livello = [  # 2
     "WWWWWWWWWWWWWWWWWW",
@@ -20,29 +23,80 @@ livello = [  # 2
     "                  ",
 ]
 </pre>
-(Questo ad esempio è proprio il livello 2 del gioco, superate il primo livello per
-vederne la corrispondenza)
-A ogni lettera sono attribuite delle proprietà specifiche secondo la seguente legenda:
 
-LEGENDA
-W = Wall/Muro
-E = Exit/Uscita
-K = Key/Chiave
-I = Invisible/Muro invisibile
-P = Porta/Porta
-H = Horizontal/Mostro che si muove in orizzontale
-V = Vertical/  Mostro che si muove in verticale
-1 = Stellina livello 1, +50 punti
-2 = Stellina livello 2, +500 punti
+(This represents Level 2 in the game—progress past the first level to see how it corresponds.)
 
-Giocare è molto semplice, per muoversi basta usare i tasti WASD, i punti verranno assegnati
-nel modo seguente:
-Aprire una porta : +25 punti 
-Prendere una stellina livello 1 : +50 punti
-Prendere una stellina livello 2 : +500 punti
-Ogni secondo rimanente alla fine di ogni livello: +25 punti
-Ogni morte : -100 punti
-(i punti guadagnati nel corso di un livello, in caso di morte, verranno comunque annullati)
+Each character in the matrix has a specific role, defined in the legend below:
 
-Insomma, il fine del gioco è di arrivare all'ultimo livello col maggior punteggio possibile,
-(quindi anche nel minor tempo), questo è tutto, buona fortuna!
+### Legend
+
+- W = Wall (Obstacle)
+
+- E = Exit (Level completion point)
+
+- K = Key (Unlocks doors)
+
+- I = Invisible Wall (Hidden obstacle)
+
+- P = Door (Can be unlocked with a key)
+
+- H = Horizontal Enemy (Moves side-to-side)
+
+- V = Vertical Enemy (Moves up and down)
+
+- 1 = Star Level 1 (+50 points)
+
+- 2 = Star Level 2 (+500 points)
+
+## Gameplay & Scoring System
+
+### Controls
+
+Players can navigate using the WASD keys.
+
+### Scoring
+
+Points are awarded as follows:
+
+- Unlocking a door: +25 points
+
+- Collecting a Level 1 star: +50 points
+
+- Collecting a Level 2 star: +500 points
+
+- Remaining time at the end of a level: +25 points per second
+
+- Death penalty: -100 points (All points collected during the current level will be lost upon death.)
+
+### Objective
+
+The goal of Escape X is to complete all levels with the highest possible score—which means playing efficiently and minimizing time spent on each level.
+
+## Technologies Used
+
+Escape X is developed using Python and the Pygame library for handling graphics, animations, and game logic. The game features:
+
+- Pygame for rendering: Handles sprites, animations, and collisions.
+
+- Object-Oriented Programming (OOP): Implements classes for game entities like walls, keys, enemies, and the player.
+
+- Event-driven mechanics: Uses keyboard input for movement and interaction.
+
+- Sound and visual effects: Includes music, sound effects, and sprite animations for an engaging experience.
+
+## How to Run the Game
+
+Install Python (if not already installed):
+```
+sudo apt install python3  # Linux
+brew install python  # macOS
+winget install Python.Python.3  # Windows
+```
+Install Pygame:
+```
+pip install pygame
+```
+Run the game script:
+```
+python Escape_X.py
+```
