@@ -6,7 +6,7 @@ Each level challenges the player to reach the exit point before time runs out wh
 
 ## Level Design & Structure
 
-The levels are generated using character matrices (implemented as lists of strings), such as the following example:
+The levels are generated using character matrices, such as the following example:
 <pre>
 livello = [  # 2
     "WWWWWWWWWWWWWWWWWW",
