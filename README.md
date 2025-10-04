@@ -23,8 +23,10 @@ livello = [  # 2
     "                  ",
 ]
 </pre>
+This represents Level 2 in the game — progress past the levels to see how it continues.
+<img width="1245" height="1014" alt="image" src="https://github.com/user-attachments/assets/a3b4bdf6-7c1f-4390-a59b-bfa08bcfa33b" />
 
-(This represents Level 2 in the game—progress past the first level to see how it corresponds.)
+
 
 Each character in the matrix has a specific role, defined in the legend below:
 
